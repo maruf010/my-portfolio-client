@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "title": "Edu-Management System",
+        "images": [
+            "https://i.ibb.co.com/B2dkMD2C/Beige-New-Product-Mockup-Now-Available-Facebook-Post.png",
+            "https://i.ibb.co.com/Q7znjq8s/Screenshot-2025-08-11-222533.png",
+            "https://i.ibb.co.com/93Wk1Wqj/Screenshot-4.png",
+            "https://i.ibb.co.com/B5GrqtQv/Screenshot-5.png"
+        ],
+        "techStack": [
+            "Html",
+            "CSS",
+            "Tailwind CSS",
+            "Javascript",
+            "React",
+            "Firebase",
+            "Stripe",
+            "MongoDB",
+            "Node.js",
+            "Express.js"
+        ],
+        "description": "A web app for Education Management with real-time availability and a Mern stack project with CRUD operations, built with React, Tailwind CSS, Javascript, Firebase authentication, MongoDB CRUD operations, and Stripe payments. The backend is also built with Express.",
+        "live": "https://edu-station-3be49.web.app",
+        "githubClient": "https://github.com/maruf010/edu-station-client",
+        "challenges": "Integrating Stripe payments and handling real-time class availability synchronization. Also User role management system",
+        "improvements": "Add multi-language support and improve more user experience."
+    },
+    {
+        "id": 2,
+        "title": "Hotel Booking Website",
+        "images": [
+            "https://i.ibb.co.com/PvTB9VNh/Beige-New-Product-Mockup-Now-Available-Facebook-Post-1.png",
+            "https://i.ibb.co.com/4gCMk7Fr/Screenshot-112.png",
+            "https://i.ibb.co.com/ZRvghBkt/Screenshot-111.png",
+            "https://i.ibb.co.com/bgYhj6h0/Screenshot-114.png"
+        ],
+        "techStack": [
+            "Html",
+            "CSS",
+            "Tailwind CSS",
+            "Javascript",
+            "React",
+            "MongoDB",
+            "Express",
+            "Node.js"
+        ],
+        "description": "A modern, full-featured Hotel Booking web application built with React and Express.js. This platform enables users to browse, filter, book, and review hotel rooms with ease. It combines sleek design, secure authentication, and intuitive features to provide a seamless user experience.",
+        "live": "https://my-hotel-8c748.web.app",
+        "githubClient": "https://github.com/maruf010/hotel-booking-client",
+        "challenges": "Display reviews sorted by latest (descending timestamp), Booking cancellation is restricted to 1 day before check-in using Moment.js. Server-side filtering for rooms by price range, Special offers popup on home page load, JWT authentication for protected routes and APIs",
+        "improvements": "Website Live Chat option add very soon. Multiple theme applying this website."
+    },
+    {
+        "id": 3,
+        "title": "Recipe Book – A Food Lover’s Hub",
+        "images": [
+            "https://i.ibb.co.com/gb3Mhr4J/Beige-New-Product-Mockup-Now-Available-Facebook-Post-2.png",
+            "https://i.ibb.co.com/R4CkvTZC/Screenshot-2025-08-12-021713.png",
+            "https://i.ibb.co.com/cSgSyrVT/Screenshot-2025-08-12-021827.png",
+            "https://i.ibb.co.com/VWv852dj/Screenshot-2025-08-12-021926.png"
+        ],
+        "techStack": [
+            "React",
+            "Tailwind CSS",
+            "Javascript",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Firebase"
+        ],
+        "description": "Welcome to Recipe Book, a MERN-stack based web application where food enthusiasts can explore, share, and manage their favorite recipes. Users can like recipes, add them to a wishlist, and manage their own contributions in a secure and engaging platform.",
+        "live": "https://recipe-book-limit.netlify.app",
+        "githubClient": "https://github.com/maruf010/recipe-making-client",
+        "challenges": "On the Details Page, add a like button that increases the count and displays likeCount people interested in this recipe, allowing users to like multiple times but preventing them from liking their own recipes. On the All Recipes Page, include a dropdown to filter recipes by cuisine type (e.g., Italian, Mexican). On the Home Page, implement a dark/light theme toggle, and integrate at least two animation/effect libraries from Lottie React, React-simple-typewriter, React Awesome Reveal, or React-tooltip.",
+        "improvements": "Add user reviews and AI-based product recommendations and user feedback add soon."
+    }
+]
