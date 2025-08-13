@@ -26,7 +26,7 @@ const ProjectsSection = () => {
                     A collection of projects I've worked on.
                 </p>
 
-                <div className="flex flex-col gap-20">
+                <div className="flex flex-col gap-10">
                     {projects.map((proj, idx) => (
                         <div key={proj.id}>
                             <ProjectCard project={proj} reverse={idx % 2 !== 0} />

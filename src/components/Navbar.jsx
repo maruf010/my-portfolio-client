@@ -25,8 +25,8 @@ const Navbar = () => {
     }, [isOpen]);
 
     return (
-        <nav className="fixed top-0 w-full bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] shadow-lg z-50">
-            <div className="lg:max-w-7xl mx-auto px-4 md:px-8 lg:px-0 py-4 flex items-center justify-between">
+        <nav className="fixed top-0 w-full  z-50">
+            <div className="lg:max-w-7xl mx-auto px-4 md:px-8 lg:px-5 py-4 flex items-center justify-between bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] shadow-lg lg:rounded-b-lg">
                 {/* Logo */}
                 <Link to="home" smooth={true} duration={500} className="cursor-pointer">
                     <div className="flex items-center space-x-2">
@@ -45,7 +45,7 @@ const Navbar = () => {
                         <a
                             href="/Resume.pdf"
                             download
-                            className="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-3 rounded-full font-medium hover:opacity-85 transition"
+                            className="bg-gradient-to-r from-blue-500 to-purple-500 px-5 py-3 rounded-full font-medium hover:opacity-85 transition"
                         >
                             Get Resume
                         </a>

@@ -21,18 +21,18 @@ const ProjectCard = ({ project, reverse }) => {
 
     return (
         <div
-            className={`flex flex-col md:flex-row items-center gap-8 ${reverse ? "md:flex-row-reverse" : ""
+            className={`flex flex-col md:flex-row items-center gap-4 bg-white/5 backdrop-blur-md p-5 rounded-lg ${reverse ? "md:flex-row-reverse" : ""
                 }`}
         >
             {/* Image Slider */}
-            <div data-aos="fade-right" className="md:w-1/2 w-full overflow-hidden rounded-lg shadow-lg p-0 relative">
+            <div data-aos="fade-right" className="md:w-1/2 w-full overflow-hidden  p-0 relative">
                 <Slider {...sliderSettings}>
                     {project.images.map((img, idx) => (
-                        <div key={idx} className="relative group hover:opacity-80">
+                        <div key={idx} className="relative group hover:opacity-80 ">
                             <img
                                 src={img}
                                 alt={project.title}
-                                className="w-full h-72 rounded-lg"
+                                className="w-full h-72 lg:h-80 rounded-lg"
                             />
                             {/* Live Demo Button on hover */}
                             <a
@@ -49,7 +49,7 @@ const ProjectCard = ({ project, reverse }) => {
             </div>
 
             {/* Content */}
-            <div data-aos="fade-left" className="md:w-1/2 w-full text-white flex flex-col">
+            <div data-aos="fade-left" className="md:w-1/2 w-full text-white flex flex-col ">
                 <h3 data-aos="fade-left" className="text-2xl font-bold mb-3">{project.title}</h3>
                 <p data-aos="fade-left" className="bg-white/5 backdrop-blur-md p-4 rounded-lg text-gray-300 leading-relaxed flex-grow">
                     {project.description}
@@ -68,13 +68,14 @@ const ProjectCard = ({ project, reverse }) => {
                 </div>
 
                 {/* GitHub and Live Links large display */}
-                <div className="hidden lg:flex gap-4 mt-5">
+                <div className="flex gap-4 mt-5">
                     <a
                         data-aos="fade-up"
                         href={project.githubClient}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-3 py-1.5 bg-purple-600 hover:bg-purple-700 rounded text-white font-semibold transition"
+                        className="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1.5 bg-white/5 backdrop-blur-md 
+                        rounded text-gray-300 md:font-semibold transition"
                     >
                         <FaGithub /> GitHub
                     </a>
@@ -83,7 +84,8 @@ const ProjectCard = ({ project, reverse }) => {
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-3 py-1.5 bg-pink-600 hover:bg-pink-700 rounded text-white font-semibold transition"
+                        className="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1.5 bg-white/5 backdrop-blur-md 
+                        rounded text-gray-300 md:font-semibold transition"
                     >
                         <FaExternalLinkAlt /> Live Demo
                     </a>
@@ -92,14 +94,15 @@ const ProjectCard = ({ project, reverse }) => {
                         to={`projects/${project.id}`}
                         className=""
                     >
-                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-purple-600 hover:bg-purple-700 text-white font-semibold transition">
+                        <div className="inline-flex items-center gap-1  md:gap-2 px-2 md:px-3 py-1.5 bg-white/5 backdrop-blur-md 
+                        rounded text-gray-300 md:font-semibold transition">
                             <CgDetailsMore />
                             View More
                         </div>
                     </Link>
                 </div>
                 {/* GitHub and Live Links small display */}
-                <div className="flex lg:hidden justify-end gap-4 mt-6">
+                <div className="hidden justify-end gap-4 mt-6">
                     <a
                         data-aos="fade-up"
                         href={project.githubClient}
